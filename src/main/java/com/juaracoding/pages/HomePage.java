@@ -20,10 +20,6 @@ public class HomePage {
     @FindBy(xpath = "//a[text()='Movies']")
     private WebElement movies;
 
-    @FindBy(xpath = "//a[text()='Movies']/following-sibling::div//li")
-    private List<WebElement> moviesCategory;
-
-
     public void moviesBtn(){
         movies.click();
     }
